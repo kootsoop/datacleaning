@@ -3,18 +3,19 @@ title: "README"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This repository is for the Coursera "Data Cleaning" course, week 4 project.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The idea is that the data set from:
 
-```{r}
-summary(cars)
-```
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-You can also embed plots, for example:
+should be downloaded and unzipped, and the `data_directory` variable in `run_analysis.R` set to wherever that is.
 
-```{r, echo=FALSE}
-plot(cars)
-```
+Upon execution of `run_analysis.R`, two files are produced:
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+`raw_tidy_data.txt` : Which has the training and test data together in it.
+`tidy_summary_data.txt` : Which has the mean measurements grouped by subject and activity.
+
+Samples of this output are also part of this repository.
+
+Also in this repository are this `README.md` file, and `CodeBook.md` which shows the code book for the two data (`txt`) files.
