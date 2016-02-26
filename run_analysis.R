@@ -85,4 +85,4 @@ mean_and_std <- total_raw_data[,features_to_keep]
 total_cols <- dim(mean_and_std)[2]
 tidy_data <- aggregate( mean_and_std[,3:total_cols], list(subject_id = mean_and_std$subject_id, activity_name = mean_and_std$activity_name), FUN = mean)
 
-write.table(tidy_data, "tidy_summary_data.txt")
+write.table(tidy_data, "tidy_summary_data.txt", row.name=FALSE)
